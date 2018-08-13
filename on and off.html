@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	p {
+		border: 1px;
+		background-color:red;
+		width: 150px;
+		height: 200px;
+		float: left;
+		margin-left: 100px;
+}
+	p#qshore {
+		border: 1px;
+		background-color:blue;
+		width: 150px;
+		height: 200px;
+		margin-left: 100px;
+	}
+	div.key{
+		clear: both;
+		padding: 15px 32px;
+        margin-left: 240px;
+	}
+</style>
+</head>
+<body>
+<p id="hello"></p>
+<p id='qshore'></p>
+<div class="key"><input type="button" value="button" onclick="callme()"></div>
+
+<script >
+	var count=0;
+	function callme(){
+		{
+			console.log(count);
+			if(count==0){
+	    document.getElementById('hello').style="background-color:transparent;"
+		}
+		else if(count==1){
+		document.getElementById("hello").style="background-color:transparent;"
+	    document.getElementById("qshore").style="background-color:transparent;"
+       }
+      else if(count==2){
+       	document.getElementById("hello").style="background-color:red;"
+	    document.getElementById("qshore").style="background-color:transparent;"
+	}
+	 else if(count==3){
+	    document.getElementById("qshore").style="background-color:blue;"
+	    count= -1;
+	}
+	   count++;
+		}
+	}
+	
+	</script>
+</body>
+</html>

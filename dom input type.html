@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM</title>
+</head>
+<body>
+	<p>userName:</p>
+	<input id="usename" type="text" name="username" placeholder="username"onchange="callme()">
+	<p id="errors"></p>
+	<p>password:</p>
+	<input id="pass" type="password" name="password" placeholder="password" onchange="callme1()">
+	<p id="errors1"></p>
+	<p>radio:</p>
+	<input id="rad" type="radio" name="gender"  onchange="callme2()">
+	<p id="errors2"></p>
+	<p>checkbox:</p>
+	<input id="check" type="checkbox" name="checkbox" onchange="callme3()">
+	<p id="errors3"></p>
+	<p>email:</p>
+	<input id="mail" type="email" name="email" placeholder="email" onchange="callme4()">
+	<p id="errors4"></p>
+	<p>number:</p>
+	<input id="num" type="number" name="number"  min="0" max="100" placeholder="no." onchange="callme5()">
+	<p id="errors5"></p>
+	<p>telephone:</p>
+	<input id="tele" type="tel" name="tel" placeholder="enter ph.no." onchange="callme6()">
+	<p id="errors6"></p>
+	<p>date:</p>
+	<input id="dat" type="date" name="date"  min="2018-01-01" max="2018-04-05" onchange="callme7()">
+	<p id="errors7"></p>
+	<p>week:</p>
+	<input id="wk" type="week" name="week" onchange="callme8()">
+	<p id="errors8"></p>
+	<p>time:</p>
+	<input id="tim" type="time" name="time" onchange="callme9()">
+	<p id="errors9"></p>
+	<p>month:</p>
+	<input id="mon" type="month" name="month" onchange="callme10()">
+	<p id="errors10"></p>
+	
+	 
+	 <script>
+		function callme(){
+		var name =document.getElementById('usename').value;
+		console.log(name);
+
+		if (name.length <4) {
+			document.getElementById('errors').innerHTML="min.4 characters req";
+		   } else if (name.length >15){ 
+		   	document.getElementById('errors').innerHTML="max 15 characters";
+		   }
+		}
+		function callme1(){
+		var nam =document.getElementById('pass').value;
+		console.log(nam);
+
+		if (nam.length <4) {
+			document.getElementById('errors1').innerHTML="min.4 characters req";
+		   } else if (nam.length >15){ 
+		   	document.getElementById('errors1').innerHTML="max 15 characters";
+		   }
+		}
+
+		function callme2(){
+		var shore =document.getElementById('rad').value;
+		console.log(shore);
+	}
+           
+           
+
+		function callme3(){
+		var chec =document.getElementById('check').value;
+		console.log(chec);
+	}
+
+		
+		function callme4(){
+		var shore4 =document.getElementById('mail').value;
+		   console.log(shore4);
+		   
+		   if (shore4.length<10) {
+			document.getElementById('errors4').innerHTML="min.10 characters req";
+		   } else if (shore4.length>30){ 
+		   	document.getElementById('errors4').innerHTML="max 30 characters";
+		   }
+		
+		}
+
+		function callme5(){
+		var nm =document.getElementById('num').value;
+		console.log(nm);
+
+		if (nm.min<"0") {
+			document.getElementById('errors5').innerHTML="starting from 0";
+		   } else if (nm.max>"100"){ 
+		   	document.getElementById('errors5').innerHTML="lmax.is 100";
+		   }
+		}
+
+		function callme6(){
+		var ph =document.getElementById('tele').value;
+		console.log(ph);
+
+		if (ph.length<10) {
+			document.getElementById('errors6').innerHTML="min. 10 no.";
+		   } else if (ph.length>13){ 
+		   	document.getElementById('errors6').innerHTML="max 13 no.";
+		   }
+		}
+
+		function callme7(){
+		var dt =document.getElementById('dat').value; //string
+		/*var dt =document.getElementById('dat').min = '2018-04-05';
+		var dt =document.getElementById('dat').id;
+		var dt =document.getElementById('dat').className = 'asdf';*/
+		console.log(dt);
+
+		if (dt.min<"2018-01-01") {
+			document.getElementById('errors7').innerHTML="wrong date";
+		   } else if (dt.max>"2018-04-05"){ 
+		   	document.getElementById('errors7').innerHTML="wrong date";
+		   }
+		}
+
+
+	/*	function callMe(){
+		//alert('asdf');
+		var id = document.getElementById('dt');
+		console.log(id.value);
+		if(id.value>"2018-04-13"){
+			console.log('yes');
+		} else {
+			console.log('no')
+		}
+		
+	}*/
+
+		function callme8(){
+		var weeek =document.getElementById('wk').value;
+		console.log(weeek);
+	}
+
+		function callme9(){
+		var ist =document.getElementById('tim').value;
+		console.log(ist);
+	}
+
+		function callme10(){
+		var vall =document.getElementById('mon').value;
+		console.log(vall);
+	}
+
+
+	</script>
+</body>
+</html>

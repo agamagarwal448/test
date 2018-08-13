@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Events</title>
+	<script type="text/javascript">
+		var count = 0;
+		function callMe(){
+			console.log(count);
+			count++;
+		}
+	</script>
+	<style>
+	p{
+		background-color: tomato;
+	}
+</style>
+</head>
+<body>
+	<p onclick="callMe()"> this is click </p>
+	<p ondblclick ="callMe()"> this is ondblclick </p>
+	<p onmouseover ="callMe()"> this is onmouseover </p>
+	<p onmouseout="callMe()"> this is onmouseout </p>
+	<p onmouseenter="callMe()"> this is onmouseenter </p>
+	<p onmouseleave="callMe()"> this is on mouse leave </p>
+	<p onmousemove="callMe()"> this is onmousemove </p>
+<pre>
+	<input type="text" name="asdf" placeholder="click" onclick="callMe()" >
+	
+	<input type="text" name="asdf" placeholder="focus" onfocus="callMe()" >
+	 
+	<input type="text" name="asdf" placeholder="blur" onblur="callMe()" >
+	
+	<input type="text" name="asdf" placeholder="change" onchange="callMe()" >
+	
+	<input type="text" name="asdf" placeholder="keyup" onkeyup="callMe()" >
+	
+	<input type="text" name="asdf" placeholder="keydown" onkeydown="callMe()" >
+	
+	<input type="text" name="asdf" placeholder="keypress" onkeypress="alert('hellow');" >
+</pre>
+
+</body>
+</html>
