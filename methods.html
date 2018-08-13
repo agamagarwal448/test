@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Methods</title>
+	<script type="text/javascript">
+		/*
+			String
+			Array
+			Number & Math 
+			Date
+		*/
+		//string Methods
+    var fname="qshore technologies";
+    console.log(fname.length);
+    console.log(fname.charAt(5));
+    console.log(fname.indexOf('s'));
+    console.log(fname.lastIndexOf('s'));
+
+    var age=334.56;
+    console.log(Math.pow(2,3));
+    console.log(Math.sqrt(9));
+    console.log(Math.ceil(age));
+    console.log(Math.floor(age));
+    console.log(Math.round(age));
+
+    console.log(age.toFixed(5));
+    console.log(age.toPrecision(5));
+    
+    var num=15;
+    console.log(num.toString(16));
+    console.log(num.toString(8));
+    console.log(num.toString(2));
+
+    var fruits=['kiwi','orange','lemon'];
+    console.log(fruits);
+    console.log('###############');
+    console.log(fruits.push('apple'));// last element adding
+    console.log(fruits);
+
+    console.log('###############');
+    console.log(fruits.pop()); // last element remove
+    console.log(fruits);
+
+    console.log('###############');
+    console.log(fruits.unshift('mango')); // first element add
+    console.log(fruits);
+
+    console.log('###############');
+    console.log(fruits.shift()); // first element remove
+    console.log(fruits);
+
+    console.log(fruits[2]);
+	console.log(fruits.length);
+
+    var today=new Date();
+    console.log(today);
+
+    console.log(today.getDate());
+    console.log(today.getDay());
+    console.log(today.getMonth());
+    console.log(today.getFullYear());
+
+</script>
+</head>
+<body>
+	
+</body>
+</html>

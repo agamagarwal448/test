@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		var d;
+		var fruits = ['kiwi','melon','berry'];
+		var user = {phone:1243 , email:'qshore@gmail.com'};
+		var obj ={
+	      fname:'qshore',
+			lname:'tech',
+			age:34,
+			gender:true,
+			intrst:null,
+			hobbies:['running','cycling','swimming',user],
+	      activities:{
+				reading:true,
+				coding:true,
+				others:false,
+				user:user},
+			callMe:function(){
+				console.log('this is function inside the object');
+				},
+			undf:d,
+			fruits:fruits
+		}
+		console.log(obj.callMe());
+		console.log(obj.callMe);
+		console.log(obj.tech);
+		console.log(obj.lname);
+		console.log(obj.gender);
+		console.log(obj.hobbies[1]);
+		console.log(obj.hobbies[3].email);
+		/*console.log(obj);*/
+		console.log(obj.activities.user.phone);
+		console.log(obj.fruits[1]);
+		console.log(obj.undf);
+
+
+     </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	</head>
+<body>
+	<script type="text/javascript">
+		console.log(a);
+		console.log(b);
+		/*hoisting*/
+		var a=2;
+		var b=3;
+
+		console.log(a);
+		console.log(b);
+		//console.log(c);
+
+		function callme() {
+			  c=a+b;/*if we remove var then it is global*/
+			console.log(a);
+		    console.log(b);
+		    console.log(c);
+		    return c;
+		}
+
+		console.log(a);
+		console.log(b);
+		//console.log(c);
+
+		var d= callme();
+		console.log(a);
+		console.log(b);
+		console.log(c);
+</script>
+<script>
+	function pcallme() { /*sincs c in the above function is global it can be used in other function.*/
+
+			console.log(a);
+		    console.log(b);
+		    console.log(c);
+		    
+		}
+		pcallme();
+</script>
+</body>
+</html>
